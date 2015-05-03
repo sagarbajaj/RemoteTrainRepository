@@ -51,6 +51,7 @@ public void testfill()
  assertEquals("<HHHH::|^^^^|::|^^^^|::|^^^^|",result3);
  assertFalse(t.fill());
  System.out.println("bye");
+ System.out.println("bjvb");
 }
   @Test
   public void testheaden()
