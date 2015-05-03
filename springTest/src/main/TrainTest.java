@@ -15,6 +15,7 @@ public void setup(){
 }
 	@Test
 	public void testPrint() {
+		
 		t=new Train("HPP");
 		String result=t.print();
 		assertEquals("<HHHH::|OOOO|::|OOOO|",result);
@@ -49,7 +50,7 @@ public void testfill()
  String result3=t.print();
  assertEquals("<HHHH::|^^^^|::|^^^^|::|^^^^|",result3);
  assertFalse(t.fill());
- 
+ System.out.println("bye");
 }
   @Test
   public void testheaden()
