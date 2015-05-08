@@ -80,6 +80,7 @@ public class Train
 			
 		}
 		this.structure=f.toString();
+		System.out.println();
 	return true;
 	}
 	}
