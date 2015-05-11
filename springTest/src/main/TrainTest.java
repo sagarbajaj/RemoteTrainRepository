@@ -32,6 +32,7 @@ public void setup(){
 	t=new Train("HCCC");
 	String result3=t.print();
 	assertEquals("<HHHH::|____|::|____|::|____|", result3);
+	System.out.println("bye ");
 	}
 
 
