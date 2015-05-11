@@ -17,7 +17,7 @@ public void setup(){
 	public void testPrint() {
 		
 		t=new Train("HPP");
-		//hgjugjgis
+		//Test comment for GIT
 		String result=t.print();
 		assertEquals("<HHHH::|OOOO|::|OOOO|",result);
 		t=new Train("HPPH");
