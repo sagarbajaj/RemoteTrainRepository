@@ -17,6 +17,7 @@ public void setup(){
 	public void testPrint() {
 		
 		t=new Train("HPP");
+		//Test comment for GIT
 		String result=t.print();
 		assertEquals("<HHHH::|OOOO|::|OOOO|",result);
 		t=new Train("HPPH");
@@ -31,6 +32,7 @@ public void setup(){
 	t=new Train("HCCC");
 	String result3=t.print();
 	assertEquals("<HHHH::|____|::|____|::|____|", result3);
+	System.out.println("bye ");
 	}
 
 
