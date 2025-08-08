@@ -1,12 +1,6 @@
 package sagar;
 
-
-
-/**
- * Hello world!
- *
- */
-public class Train 
+public class Train
 {
 	private String structure;
 	private static final String start="HHHH";
@@ -19,13 +13,11 @@ public class Train
 	private static final String fs="^^^^";
 	private static final String beg="<";
 
-
-
-
 	public Train(String structure) {
 		super();
 		this.structure = structure;
 	}
+
 	public String print()
 	  {
 		StringBuilder sb=new StringBuilder();
@@ -64,6 +56,7 @@ public class Train
 		String result=sb.toString();
 		return result;
 	  }
+
 	public boolean fill()
 	{
 		StringBuilder f=new StringBuilder(structure);
@@ -77,12 +70,13 @@ public class Train
 				f.setCharAt(i,'M');
 				break;
 			}
-			
+
 		}
 		this.structure=f.toString();
 	return true;
 	}
 	}
+
 	public void detachHead()
 	{
         StringBuilder dh=new StringBuilder(structure);
@@ -90,44 +84,24 @@ public class Train
        else
        {        for(int i=0;i<dh.length();i++)
         {
-        	if(dh.charAt(i)=='H')
-        	{
-        		dh.deleteCharAt(i);
-        		break;
-        	}
+		if(dh.charAt(i)=='H')
+		{
+			dh.deleteCharAt(i);
+			break;
+		}
         }
         this.structure=dh.toString();
-       } 
        }
-//        if(dh.charAt(0)=='H')
-//        {
-//        	dh.deleteCharAt(0);
-//            this.structure=dh.toString();
-//
-//        }
+       }
+
 	public void detachEnd()
 	{
 		StringBuilder de=new StringBuilder(structure);
 		if(de.charAt(structure.length()-1)=='H')
 		{de.deleteCharAt(structure.length()-1);
 		this.structure=de.toString();
-		
-	}
-		 System.out.println("sagar3");
-		 System.out.println("hello");
-		 System.out.println("sagar1s");
-		}
-	
-	public static void main(String[] args)
-	{
-		Train t=new Train("HPRPH");
-		System.out.println(t.print());
-		t.detachEnd();
-		System.out.println(t.print());
-		t.detachHead();
-		System.out.println(t.print());
-		t.detachHead();
-		System.out.println(t.print());
 
 	}
+		}
+
 }

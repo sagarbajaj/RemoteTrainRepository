@@ -50,10 +50,6 @@ public void testfill()
  String result3=t.print();
  assertEquals("<HHHH::|^^^^|::|^^^^|::|^^^^|",result3);
  assertFalse(t.fill());
- System.out.println("bye");
- System.out.println("bjvb");
- System.out.println("bjb");
- System.out.println("cgch");
 }
   @Test
   public void testheaden()
